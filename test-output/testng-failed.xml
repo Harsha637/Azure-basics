@@ -5,7 +5,6 @@
     <classes>
       <class name="BasicProj.Basicproj.DemoTest">
         <methods>
-          <include name="AccessoriesPage"/>
           <include name="beforeMethod"/>
           <include name="AfterMethod"/>
           <include name="podspage"/>
