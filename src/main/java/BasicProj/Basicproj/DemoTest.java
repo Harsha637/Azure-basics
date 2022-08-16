@@ -3,8 +3,7 @@ package BasicProj.Basicproj;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
-
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 public class DemoTest {
@@ -36,7 +35,7 @@ public class DemoTest {
 		driver.findElement(By.xpath("(//*[text()='Pods'])[1]")).click();
 		Thread.sleep(5000);
 		String s =driver.findElement(By.xpath("//*[text()='ePod Vape Pods']")).getText();
-		//Assert.assertEquals("ePod Vape Pods", s);
+		Assert.assertEquals("ePod Vape Pods", s);
 		System.out.println(s);
 	}
 	
@@ -50,7 +49,7 @@ public class DemoTest {
 		
 		String s =driver.findElement(By.xpath("//*[text()='Charging Cable']")).getText();
 		System.out.println(s);
-		//Assert.assertEquals("Charging Cable", s);
+		Assert.assertEquals("Charging Cable", s);
 	}
 	
 	@AfterMethod
