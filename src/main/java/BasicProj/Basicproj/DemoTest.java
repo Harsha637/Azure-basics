@@ -30,15 +30,14 @@ public class DemoTest {
 	@Test
 	public void podspage() throws InterruptedException
 	{
-		boolean flag=false;
 		driver.findElement(By.xpath("(//*[text()='Shop'])[1]")).click();
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("(//*[text()='Pods'])[1]")).click();
 		Thread.sleep(5000);
-		 flag =driver.findElement(By.xpath("//*[text()='ePod Vape Pods']")).isDisplayed();
+		String s =driver.findElement(By.xpath("//*[text()='ePod Vape Pods']")).getText();
+		Assert.assertEquals("ePod Vape Pod", s);
 		
-		Assert.assertTrue(flag);
-		//System.out.println(s);
+		System.out.println(s);
 	}
 	
 	@Test
