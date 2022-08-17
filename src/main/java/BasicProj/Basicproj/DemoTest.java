@@ -22,10 +22,7 @@ public class DemoTest {
               driver.manage().window().maximize();
               Thread.sleep(10000);
               driver.findElement(By.xpath("//button[@type='submit']")).click();
-              //driver.findElement(By.xpath("//*[contains(@class,'Button')]//*[text()='Login/Register']")).click();
-              //driver.findElement(By.xpath("(.//*[@name='email'])[1]")).sendKeys("Matypots@bat.com");
-              //driver.findElement(By.xpath("(.//*[@name='password'])[1]")).sendKeys("TEST1234");
-              //driver.findElement(By.xpath("(.//*[text()='Log in'])[2]")).click();
+              
 	}
 	@Test
 	public void podspage() throws InterruptedException
