@@ -32,7 +32,7 @@ public class DemoTest {
 		driver.findElement(By.xpath("(//*[text()='Pods'])[1]")).click();
 		Thread.sleep(5000);
 		String s =driver.findElement(By.xpath("//*[text()='ePod Vape Pods']")).getText();
-		Assert.assertEquals("ePod Vape Pod", s);
+		Assert.assertEquals("ePod Vape Pods", s);
 		
 		System.out.println(s);
 	}
